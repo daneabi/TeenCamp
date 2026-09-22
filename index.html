@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TeenCamp Opgave Fordeler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 20px; background: #f4f4f9; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .grid { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 20px;}
+        .col { flex: 1; min-width: 300px; background: #f9f9f9; padding: 15px; border-radius: 6px; }
+        .card { background: #fff; padding: 15px; margin-bottom: 15px; border-radius: 5px; border-left: 4px solid #0056b3; box-shadow: 0 2px 4px rgba(0,0,0,0.05);}
+        input, select, button { width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { background: #0056b3; color: white; border: none; font-weight: bold; cursor: pointer; }
+        button:hover { background: #004494; }
+        .btn-danger { background: #dc3545; }
+        .btn-danger:hover { background: #c82333; }
+        ul { padding-left: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏕️ Opgave Fordeler</h1>
+        
+        <div class="grid">
+            <div class="col">
+                <h3>➕ Tilføj Person</h3>
+                <form action="/add" method="POST">
+                    <input type="text" name="navn" placeholder="Navn" required>
+                    <select name="køn">
+                        <option value="F">Pige (F)</option>
+                        <option value="M">Dreng (M)</option>
+                    </select>
+                    <select name="rolle">
+                        <option value="teenagers">Teenager</option>
+                        <option value="leaders">Leder</option>
+                    </select>
+                    <button type="submit">Tilføj</button>
+                </form>
+            </div>
+            
+            <div class="col">
+                <h3>⚙️ Generer Plan</h3>
+                <form action="/generate" method="POST">
+                    <input type="number" name="dage" value="7" min="1" required>
+                    <button type="submit">Lav Plan</button>
+                </form>
+                <form action="/clear" method="POST" onsubmit="return confirm('Er du sikker på, du vil slette alt?');">
+                    <button type="submit" class="btn-danger" style="margin-top: 15px;">Ryd Lister</button>
+                </form>
+            </div>
+        </div>
+
+        {% if schedule %}
+            <h2>🗓️ Vagtplan</h2>
+            {% for dag in schedule %}
+                <h3 style="margin-top: 30px; border-bottom: 2px solid #ccc; padding-bottom: 5px;">Dag {{ dag.dag }}</h3>
+                <div class="grid">
+                {% for chore in dag.chores %}
+                    <div class="card">
+                        <strong>{{ chore.navn }}</strong><br>
+                        <span style="color: #555; font-size: 0.9em;">
+                            <strong>Ledere:</strong> {{ chore.ledere | join(', ') }}<br>
+                            <strong>Teens:</strong> {{ chore.teens | join(', ') }}
+                        </span>
+                    </div>
+                {% endfor %}
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="grid">
+                <div class="col">
+                    <h3>Teens ({{ data.teenagers | length }})</h3>
+                    <ul>{% for t in data.teenagers %}<li>{{ t.navn }} ({{ t.køn }})</li>{% endfor %}</ul>
+                </div>
+                <div class="col">
+                    <h3>Ledere ({{ data.leaders | length }})</h3>
+                    <ul>{% for l in data.leaders %}<li>{{ l.navn }} ({{ l.køn }})</li>{% endfor %}</ul>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
