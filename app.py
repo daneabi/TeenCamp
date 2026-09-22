@@ -3,8 +3,11 @@ import os
 import random
 from flask import Flask, render_template, request, redirect, url_for
 
-app = Flask(__name__)
-FILE_NAME = 'roster_v2.json'
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+app = Flask(__name__, template_folder=os.path.join(BASE_DIR, 'templates'))
+
+FILE_NAME = 'people.json'
 
 CHORES = [
     {"navn": "Morgenmad Køkken", "ledere": 1, "teens": 3, "køn_krav": None},

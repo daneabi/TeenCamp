@@ -1,0 +1,282 @@
+{
+    "teenagers": [
+        {
+            "navn": "Abby",
+            "køn": "F"
+        },
+        {
+            "navn": "Frederik",
+            "køn": "M"
+        },
+        {
+            "navn": "Diana",
+            "køn": "F"
+        },
+        {
+            "navn": "Lasse",
+            "køn": "M"
+        },
+        {
+            "navn": "Sofia",
+            "køn": "F"
+        },
+        {
+            "navn": "Sandra",
+            "køn": "F"
+        },
+        {
+            "navn": "Fiona",
+            "køn": "F"
+        },
+        {
+            "navn": "David",
+            "køn": "M"
+        },
+        {
+            "navn": "Don",
+            "køn": "M"
+        },
+        {
+            "navn": "Peter",
+            "køn": "M"
+        },
+        {
+            "navn": "Matti",
+            "køn": "M"
+        },
+        {
+            "navn": "Signe",
+            "køn": "F"
+        },
+        {
+            "navn": "Tiana",
+            "køn": "F"
+        },
+        {
+            "navn": "Fie",
+            "køn": "F"
+        },
+        {
+            "navn": "Rebekka",
+            "køn": "F"
+        },
+        {
+            "navn": "Rikke",
+            "køn": "F"
+        },
+        {
+            "navn": "Malthe",
+            "køn": "M"
+        },
+        {
+            "navn": "Mikkel",
+            "køn": "M"
+        },
+        {
+            "navn": "Magnus",
+            "køn": "M"
+        },
+        {
+            "navn": "Martin",
+            "køn": "M"
+        },
+        {
+            "navn": "Cecilie",
+            "køn": "F"
+        },
+        {
+            "navn": "Thomas",
+            "køn": "M"
+        },
+        {
+            "navn": "Valdemar",
+            "køn": "M"
+        },
+        {
+            "navn": "Alexander",
+            "køn": "M"
+        },
+        {
+            "navn": "Michala",
+            "køn": "F"
+        },
+        {
+            "navn": "Emilie",
+            "køn": "F"
+        },
+        {
+            "navn": "Gerthe",
+            "køn": "F"
+        },
+        {
+            "navn": "Yonna",
+            "køn": "F"
+        },
+        {
+            "navn": "Peter M",
+            "køn": "M"
+        },
+        {
+            "navn": "Magnus K",
+            "køn": "M"
+        },
+        {
+            "navn": "Thomas S",
+            "køn": "M"
+        },
+        {
+            "navn": "Alberthe",
+            "køn": "F"
+        },
+        {
+            "navn": "Lucas",
+            "køn": "M"
+        },
+        {
+            "navn": "Lukas",
+            "køn": "M"
+        },
+        {
+            "navn": "Villads",
+            "køn": "M"
+        },
+        {
+            "navn": "Thom",
+            "køn": "M"
+        },
+        {
+            "navn": "Frede",
+            "køn": "M"
+        },
+        {
+            "navn": "Fiona T",
+            "køn": "F"
+        },
+        {
+            "navn": "Suy",
+            "køn": "F"
+        }
+    ],
+    "leaders": [
+        {
+            "navn": "Rebecca T",
+            "køn": "F"
+        },
+        {
+            "navn": "Hannah",
+            "køn": "F"
+        },
+        {
+            "navn": "Abby",
+            "køn": "F"
+        },
+        {
+            "navn": "Frederik Ø",
+            "køn": "M"
+        },
+        {
+            "navn": "Rebecca T",
+            "køn": "F"
+        },
+        {
+            "navn": "Hannah",
+            "køn": "F"
+        },
+        {
+            "navn": "Daniel",
+            "køn": "M"
+        },
+        {
+            "navn": "Anna",
+            "køn": "F"
+        },
+        {
+            "navn": "Rasmus",
+            "køn": "M"
+        },
+        {
+            "navn": "Jakob",
+            "køn": "M"
+        },
+        {
+            "navn": "David",
+            "køn": "M"
+        },
+        {
+            "navn": "Louise",
+            "køn": "F"
+        },
+        {
+            "navn": "Qasem",
+            "køn": "M"
+        },
+        {
+            "navn": "Niklas",
+            "køn": "M"
+        },
+        {
+            "navn": "David",
+            "køn": "M"
+        },
+        {
+            "navn": "Nicklas",
+            "køn": "M"
+        },
+        {
+            "navn": "Ingrid",
+            "køn": "F"
+        },
+        {
+            "navn": "Hanna",
+            "køn": "F"
+        },
+        {
+            "navn": "Linea",
+            "køn": "F"
+        },
+        {
+            "navn": "Maja",
+            "køn": "F"
+        },
+        {
+            "navn": "Josef",
+            "køn": "M"
+        },
+        {
+            "navn": "Paci",
+            "køn": "M"
+        },
+        {
+            "navn": "Samuel",
+            "køn": "M"
+        },
+        {
+            "navn": "Siv",
+            "køn": "F"
+        },
+        {
+            "navn": "Stephanie",
+            "køn": "F"
+        },
+        {
+            "navn": "Suele",
+            "køn": "F"
+        },
+        {
+            "navn": "Zakarias",
+            "køn": "M"
+        },
+        {
+            "navn": "William",
+            "køn": "M"
+        },
+        {
+            "navn": "Wilhelm",
+            "køn": "M"
+        },
+        {
+            "navn": "Jadanna",
+            "køn": "F"
+        }
+    ]
+}
