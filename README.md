@@ -1,7 +1,3 @@
-# Optimering
-Noter til optimerings forelæsninger (Datalogi 2024)
+# TeenCamp Chores
 
-
-
-
-OBS: Dette er mine egne noter, så der kan forekomme fejl!
+Når vi skal uddelegere chores til TeenCamp
