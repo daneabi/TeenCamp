@@ -81,7 +81,6 @@ def add():
     if navn and køn in ['M', 'F'] and rolle in ['teenagers', 'leaders']:
         data[rolle].append({"navn": navn, "køn": køn})
         save_data(data)
-
     return redirect(url_for('index', last_kon=køn, last_rolle=rolle))
 
 @app.route('/generate', methods=['POST'])

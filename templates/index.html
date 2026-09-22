@@ -26,14 +26,14 @@
                 <h3>➕ Tilføj Person</h3>
                 <form action="/add" method="POST">
                     <input type="text" name="navn" placeholder="Navn" required>
-                    <select name="køn">
-                        <option value="F">Pige (F)</option>
-                        <option value="M">Dreng (M)</option>
-                    </select>
-                    <select name="rolle">
-                        <option value="teenagers">Teenager</option>
-                        <option value="leaders">Leder</option>
-                    </select>
+                        <select name="køn">
+                            <option value="F" {% if last_kon == 'F' %}selected{% endif %}>Pige (F)</option>
+                            <option value="M" {% if last_kon == 'M' %}selected{% endif %}>Dreng (M)</option>
+                        </select>
+                        <select name="rolle">
+                            <option value="teenagers" {% if last_rolle == 'teenagers' %}selected{% endif %}>Teenager</option>
+                            <option value="leaders" {% if last_rolle == 'leaders' %}selected{% endif %}>Leder</option>
+                        </select>
                     <button type="submit">Tilføj</button>
                 </form>
             </div>
