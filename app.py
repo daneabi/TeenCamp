@@ -66,7 +66,10 @@ def get_next_person(available_pool, full_list, arbejder_i_dag, køn=None):
 @app.route('/')
 def index():
     data = load_data()
-    return render_template('index.html', data=data, schedule=None)
+    # har brug for seneste konfig for nemmere indsættelse af folk
+    last_kon = request.args.get('last_kon', 'F')
+    last_rolle = request.args.get('last_rolle', 'teenagers')
+    return render_template('index.html', data=data, schedule=None, last_kon=last_kon, last_rolle=last_rolle)
 
 @app.route('/add', methods=['POST'])
 def add():
@@ -78,8 +81,8 @@ def add():
     if navn and køn in ['M', 'F'] and rolle in ['teenagers', 'leaders']:
         data[rolle].append({"navn": navn, "køn": køn})
         save_data(data)
-        
-    return redirect(url_for('index'))
+
+    return redirect(url_for('index', last_kon=køn, last_rolle=rolle))
 
 @app.route('/generate', methods=['POST'])
 def generate():
